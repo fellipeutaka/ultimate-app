@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/jsx-runtime",
+    "plugin:@next/next/recommended",
+    "prettier",
+    "turbo"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react", "import-helpers"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "@next/next/no-html-link-for-pages": "off",
+    "react/prop-types": "off",
+    "quotes": ["warn", "double"],
+    "semi": ["warn", "always"],
+    "arrow-parens": ["warn", "always"],
+    "no-unused-vars": ["warn", { "args": "none" }],
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          ["/^@web/", "/^@server/", "/^@mobile/"],
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
+  },
+  "globals": {
+    "JSX": "writable"
+  }
+}
