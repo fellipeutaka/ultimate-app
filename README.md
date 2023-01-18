@@ -61,6 +61,6 @@ Or, see the GitHub documentation on [how to create a pull request](https://help.
 
 ## 📝 License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/fellipeutaka/ultimate-app/blob/main/LICENSE) for details.
+This project is under the MIT license. See the [LICENSE](https://github.com/fellipeutaka/ultimate-app/blob/main/LICENSE.md) for details.
 
 Made with ♥ by Fellipe Utaka 👋 [Get in touch!](https://www.linkedin.com/in/fellipeutaka/)
