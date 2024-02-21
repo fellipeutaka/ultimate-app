@@ -1,8 +1,7 @@
 import { INestApplication } from "@nestjs/common";
 import { Test } from "@nestjs/testing";
+import { AppModule } from "~/app.module.js";
 import request from "supertest";
-
-import { AppModule } from "./../src/app.module";
 
 export const a = 2;
 

@@ -1,7 +1,4 @@
 {
   "$schema": "https://json.schemastore.org/eslintrc",
-  "extends": [
-    "./react.json",
-    "plugin:@next/next/recommended"
-  ]
+  "extends": ["./react.json", "plugin:@next/next/recommended"]
 }

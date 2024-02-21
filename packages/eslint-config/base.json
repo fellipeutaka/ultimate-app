@@ -3,10 +3,7 @@
   "env": {
     "es2021": true
   },
-  "extends": [
-    "prettier",
-    "turbo"
-  ],
+  "extends": ["prettier", "turbo"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",

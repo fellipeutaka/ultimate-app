@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "sourceMaps": true,
+  "exclude": [".*\\.spec.ts$"],
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "baseUrl": "./",
+    "target": "es2022"
+  },
+  "minify": true,
+  "module": {
+    "type": "es6",
+    "strict": true
+  }
+}

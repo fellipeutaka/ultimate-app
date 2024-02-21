@@ -3,8 +3,9 @@
   "display": "Nest.js",
   "extends": "./base.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2017",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "es2022",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
@@ -15,6 +16,6 @@
     "strictPropertyInitialization": false,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
   }
 }
