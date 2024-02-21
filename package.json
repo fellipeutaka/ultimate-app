@@ -6,14 +6,16 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
-    "clean": "rimraf {apps,packages}/**/{node_modules,dist,.next,.turbo} -g && rimraf node_modules"
+    "clean": "rimraf {apps,packages}/**/{node_modules,dist,.next,.turbo} -g && rimraf node_modules",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "@commitlint/cz-commitlint": "^18.6.1",
     "commitizen": "^4.3.0",
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "@commitlint/cz-commitlint": "^17.4.2",
-    "husky": "^9.0.11",
+    "husky": "8.0.3",
+    "lint-staged": "^15.2.2",
     "prettier": "latest",
     "turbo": "latest",
     "typescript": "^5.3.3"
@@ -26,5 +28,15 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "vitest related --run --bail",
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,json}": [
+      "prettier -w"
+    ]
   }
 }
