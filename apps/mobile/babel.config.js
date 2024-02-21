@@ -10,7 +10,7 @@ module.exports = function (api) {
           paths: [
             {
               root: __dirname,
-              rootPathPrefix: "@mobile/",
+              rootPathPrefix: "~/",
               rootPathSuffix: "src",
             },
           ],

@@ -1,4 +1,4 @@
-import { Home } from "@mobile/screens/Home";
+import { Home } from "~/screens/Home";
 
 export function App() {
   return <Home />;
