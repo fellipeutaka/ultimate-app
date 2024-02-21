@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "@ultimate/server",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -29,12 +29,12 @@
     "@types/express": "^4.17.15",
     "@types/node": "18.11.18",
     "@types/supertest": "^2.0.12",
-    "eslint-config-custom": "workspace:*",
+    "@ultimate/tsconfig": "workspace:*",
+    "@ultimate/eslint-config": "workspace:*",
     "source-map-support": "^0.5.21",
     "supertest": "^6.3.3",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
-    "tsconfig-paths": "4.1.2",
-    "tsconfig": "workspace:*"
+    "tsconfig-paths": "4.1.2"
   }
 }

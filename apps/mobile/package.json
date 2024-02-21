@@ -1,5 +1,5 @@
 {
-  "name": "mobile",
+  "name": "@ultimate/mobile",
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
@@ -29,10 +29,10 @@
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.70.6",
     "@types/react-test-renderer": "^18.0.0",
+    "@ultimate/tsconfig": "workspace:*",
+    "@ultimate/eslint-config": "workspace:*",
     "babel-plugin-inline-dotenv": "^1.7.0",
     "babel-plugin-root-import": "^6.6.0",
-    "eslint-config-custom": "workspace:*",
-    "react-test-renderer": "^18.2.0",
-    "tsconfig": "workspace:*"
+    "react-test-renderer": "^18.2.0"
   }
 }

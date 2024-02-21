@@ -1,6 +1,6 @@
-export default function Home() {
+export default function Page() {
   return (
-    <main className="grid place-items-center h-screen bg-black text-white">
+    <main className="grid place-items-center min-h-screen">
       <h1>Hello World!</h1>
     </main>
   );

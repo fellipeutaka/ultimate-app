@@ -1,17 +1,12 @@
 {
-  "extends": "tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"],
+  "extends": "@ultimate/tsconfig/nextjs.json",
   "compilerOptions": {
-    "allowJs": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "baseUrl": ".",
     "paths": {
-      "@web/*": ["./src/*"]
-    }
-  }
+      "~/*": ["./src/*"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

@@ -1,36 +1,19 @@
 {
+  "$schema": "https://json.schemastore.org/eslintrc",
   "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true,
-    "jest": true
+    "es2021": true
   },
   "extends": [
-    "plugin:react/jsx-runtime",
-    "plugin:@next/next/recommended",
     "prettier",
     "turbo"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "sourceType": "module"
   },
-  "plugins": ["react", "import-helpers"],
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
+  "plugins": ["import-helpers"],
   "rules": {
-    "@next/next/no-html-link-for-pages": "off",
-    "react/prop-types": "off",
-    "quotes": ["warn", "double"],
-    "semi": ["warn", "always"],
-    "arrow-parens": ["warn", "always"],
     "no-unused-vars": ["warn", { "args": "none" }],
     "no-console": [
       "warn",
@@ -54,8 +37,5 @@
         }
       }
     ]
-  },
-  "globals": {
-    "JSX": "writable"
   }
 }

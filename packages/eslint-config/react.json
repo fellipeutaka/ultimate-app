@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "extends": [
+    "./base.json",
+    "plugin:react/jsx-runtime"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

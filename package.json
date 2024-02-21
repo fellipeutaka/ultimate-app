@@ -1,38 +1,27 @@
 {
-  "name": "ultimate-app",
-  "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
-    "prepare": "husky install"
+    "clean": "rimraf {apps,packages}/**/{node_modules,dist,.next,.turbo} -g && rimraf node_modules"
   },
   "devDependencies": {
-    "commitizen": "^4.2.6",
-    "inquirer": "8",
+    "commitizen": "^4.3.0",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
     "@commitlint/cz-commitlint": "^17.4.2",
-    "@types/jest": "29.2.5",
-    "eslint-config-custom": "workspace:*",
-    "husky": "^8.0.0",
-    "jest": "29.3.1",
+    "husky": "^9.0.11",
     "prettier": "latest",
-    "ts-jest": "29.0.5",
     "turbo": "latest",
-    "typescript": "4.9.4"
+    "typescript": "^5.3.3"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=20"
   },
-  "packageManager": "pnpm@7.25.0",
+  "packageManager": "pnpm@8.15.3",
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
